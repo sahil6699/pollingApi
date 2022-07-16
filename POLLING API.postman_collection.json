@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "20654143-71c2-42d0-ab58-d09a02f8b9c4",
+		"name": "POLLING API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Question Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"This is a tough question\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/questions/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Option Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"Ankit\",\r\n    \"votes\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/questions/62d2af357f99ea121009d04c/options/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"62d2af357f99ea121009d04c",
+						"options",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Question get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/questions/62d2af357f99ea121009d04c",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"62d2af357f99ea121009d04c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Question",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/questions/62d2aad5014bdd17a0aa3ef6/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"62d2aad5014bdd17a0aa3ef6",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Option Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/options/62d2ab59014bdd17a0aa3efe/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"options",
+						"62d2ab59014bdd17a0aa3efe",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add vote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/options/62d2ab59014bdd17a0aa3efe/add_vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"options",
+						"62d2ab59014bdd17a0aa3efe",
+						"add_vote"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
