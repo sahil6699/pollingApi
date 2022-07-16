@@ -22,6 +22,10 @@ Steps:-
 5. /options/:id/add_vote -> To increment the count of votes
 6. /questions/:id -> To view a question and it's options
 
+## Deployment
+
+The project is deployed [here](https://polling-api-app.herokuapp.com/)
+
 ### Note
 
 the polling api.postman is the collection of json files on which the the api has been tested
