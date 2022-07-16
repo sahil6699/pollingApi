@@ -21,3 +21,7 @@ Steps:-
 4. /options/:id/delete -> To delete an option
 5. /options/:id/add_vote -> To increment the count of votes
 6. /questions/:id -> To view a question and it's options
+
+### Note
+
+the polling api.postman is the collection of json files on which the the api has been tested
